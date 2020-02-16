@@ -17,7 +17,7 @@ class CreateHotelsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('location');
-            $table->strnig('description');
+            $table->string('description');
             $table->string('image');
             $table->timestamps();
         });
