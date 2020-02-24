@@ -8,9 +8,13 @@ class Hotel extends Model
 {
     protected $fillable = [
         'name',
-        'location',
+        'address_1',
         'description',
-        'image'
+        'image',
+        'address_2',
+        'city',
+        'state',
+        'zip'
     ];
 
     public function rooms() {
