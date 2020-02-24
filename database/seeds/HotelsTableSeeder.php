@@ -1,9 +1,9 @@
 <?php
 
 //Load Hotel Model
-use App\Models\Hotel;
 
 use Illuminate\Database\Seeder;
+use App\Models\Hotel;
 
 class HotelsTableSeeder extends Seeder
 {

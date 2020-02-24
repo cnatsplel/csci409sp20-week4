@@ -1,9 +1,9 @@
 <?php
 
-use App\Models\Hotel;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\Models\Hotel;
 
 class UsersTableSeeder extends Seeder
 {
