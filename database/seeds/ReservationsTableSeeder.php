@@ -1,5 +1,5 @@
 <?php
-
+use App\Models\Hotel;
 use Illuminate\Database\Seeder;
 
 class ReservationsTableSeeder extends Seeder
