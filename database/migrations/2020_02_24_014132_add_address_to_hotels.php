@@ -20,6 +20,7 @@ class AddAddressToHotels extends Migration
             $table->string('city');
             $table->string('state');
             $table->string('zip');
+
         });
     }
 
@@ -35,5 +36,6 @@ class AddAddressToHotels extends Migration
             $table->renameColumn('address_1', 'location');
             $table->dropColumn(['address_2', 'city', 'state', 'zip']);
         });
+        
     }
 }
