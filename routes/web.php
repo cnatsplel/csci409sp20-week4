@@ -11,18 +11,20 @@
 |
 */
 
-Route::get('/', function() {
-    return '/route;';
+/*Route::get('/', function () {
+    return view('welcome');
+});
+*/
+
+Route::get('/', function(){
+    return '/ route';
 });
 
 Route::get('/hotels', 'HotelController@index');
 
-Route::prefix('reservations', function() {
-    Route::get('/', function() {
+Route::group(['prefix' => 'dashboard'], function() {
+    Route::get('/', function () {
         return '/dashboard route';
     });
-
-    Route::get('reservations/create/{id}', 'ReservationController@create');
+    Route::resource('reservations', 'ReservationController', ['except' => ['create', 'read', 'update', 'delete']]);
 });
-
-Route::resource('reservations', 'ReservationController', ['except' => ['create', 'read', 'update', 'delete']]);
