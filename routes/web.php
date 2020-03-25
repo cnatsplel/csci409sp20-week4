@@ -26,5 +26,6 @@ Route::group(['prefix' => 'dashboard'], function() {
     Route::get('/', function () {
         return '/dashboard route';
     });
-    Route::resource('reservations', 'ReservationController', ['except' => ['create', 'read', 'update', 'delete']]);
 });
+
+Route::resource('reservations', 'ReservationController', ['except' => ['create', 'read', 'update', 'delete']]);
