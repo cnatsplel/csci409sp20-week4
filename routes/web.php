@@ -19,7 +19,7 @@ Route::get('/hotels', 'HotelController@index');
 
 Route::prefix('reservations', function() {
     Route::get('/', function() {
-        return 'Showing users homepage';
+        return '/dashboard route';
     });
 
     Route::get('reservations/create/{id}', 'ReservationController@create');
