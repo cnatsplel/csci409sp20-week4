@@ -31,3 +31,6 @@ Route::group(['prefix' => 'dashboard'], function() {
 });
 
 Route::resource('reservations', 'ReservationController', ['except' => ['create', 'read', 'update', 'delete']]);
+
+Route::get('/hotels/create', 'HotelController@create');
+Route::post('/hotels/store', 'HotelController@store');
